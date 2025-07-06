@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Preview</title>
+  <style>
+    #image {
+      width: 400px;
+      height: 300px;
+      border: 2px solid #ccc;
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+      line-height: 300px;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .preview {
+      width: 100px;
+      height: 80px;
+      margin: 5px;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<body onload="console.log('Page Loaded')">
+  <div id="image">Hover over an image below to display here.</div>
+
+  <img 
+    src="img1.jpg" 
+    alt="Sunset over lake" 
+    class="preview"
+    onmouseover="upDate(this)" 
+    onmouseout="undo()"
+  />
+  <img 
+    src="img2.jpg" 
+    alt="Forest in fog" 
+    class="preview"
+    onmouseover="upDate(this)" 
+    onmouseout="undo()"
+  />
+  <img 
+    src="img3.jpg" 
+    alt="City skyline" 
+    class="preview"
+    onmouseover="upDate(this)" 
+    onmouseout="undo()"
+  />
+
+  <script src="script.js"></script>
+</body>
+</html>
